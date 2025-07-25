@@ -1,0 +1,12 @@
+import re
+helloRegex = re.compile(r'^hello')
+mo = helloRegex.search('hello world')
+print(mo.group())
+endRegex = re.compile(r'world$')
+mo2 = endRegex.search('hello world')
+print(mo2.group())
+wholeRegex = re.compile(r'^\d+$')
+mo3 = wholeRegex.search('1234567890')
+mo4 = wholeRegex.search('123abc456')
+print(mo3.group())
+print(mo4)
