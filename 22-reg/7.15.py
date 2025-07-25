@@ -6,7 +6,7 @@ phoneRegex = re.compile(r'''(
     (\s|-|\.)
     (\d{4})   
     (\s*(ext|x|ext.)\s*(\d{2,5}))?
-                        )''', re.VERBOSE)                                                                      )                                
+                        )''', re.VERBOSE)        
 emailRegex = re.compile(r'''(
     [a-zA-Z0-9._%+-]+
     @
